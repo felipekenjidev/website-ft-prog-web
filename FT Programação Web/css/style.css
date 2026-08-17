@@ -67,7 +67,19 @@ main {
     margin: 45px auto;
 }
 
-section.informacao-inicial 
+section.informacao-inicial {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+section.informacao-inicial::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+}
 
 section.informacao-inicial h1 {
     font-size: 2rem; font-weight: 600;
