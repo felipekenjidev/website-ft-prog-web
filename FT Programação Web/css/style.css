@@ -1,3 +1,5 @@
+/* =========================== VISUALIZAÇÃO DESKTOP GRANDE (1920x1280) =========================== */
+/* -------- Definições e Variáveis Globais ------ */
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -12,11 +14,13 @@
     --cor-branca: #FFFFFF;
 
     --altura-header: 120px;
+    --largura-main: 70%;
 }
 
 html { font-size: 18px; font-family: 'Inter Tight'; }
-body { padding-top: var(--altura-header); }
 
+/* ------------ Header e Navegação -------------- */
+body { padding-top: var(--altura-header); }
 header {
     position: fixed; top: 0; left: 0;
     z-index: 1;
@@ -36,6 +40,7 @@ nav {
     column-gap: 40px;
 }
 
+/* ------------- Banner Principal --------------- */
 figure {
     height: 450px;
     background-image: url(../images/banner.jpg);
@@ -54,4 +59,42 @@ figcaption {
     background: -webkit-linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
     background: -moz-linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
     background: linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
+}
+
+/* ----------- Informações Iniciais ------------- */
+main {
+    width: var(--largura-main);
+    margin: 45px auto;
+}
+
+section.informacao-inicial 
+
+section.informacao-inicial h1 {
+    font-size: 2rem; font-weight: 600;
+    color: var(--cor-primaria);
+}
+
+section.informacao-inicial .topicos  {
+    display: flex; flex-flow: column wrap;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+
+section.informacao-inicial .topicos > div  {
+    display: flex; flex-flow: row wrap;
+    column-gap: 20px;
+}
+
+section.informacao-inicial .topicos > div > div {
+    display: flex; flex-flow: row wrap;
+    column-gap: 10px;
+}
+
+section.informacao-inicial .topicos img {
+    width: 28px;
+}
+
+section.informacao-inicial .topicos p {
+    font-size: 1.1rem; font-weight: 600;
+    color: var(--cor-secundaria);
 }
