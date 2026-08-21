@@ -102,9 +102,7 @@ section.informacao-inicial .topicos > div > div {
     column-gap: 10px;
 }
 
-section.informacao-inicial .topicos img {
-    width: 28px;
-}
+section.informacao-inicial .topicos img { width: 28px; }
 
 section.informacao-inicial .topicos p {
     font-size: 1.1rem; font-weight: 600;
@@ -112,9 +110,7 @@ section.informacao-inicial .topicos p {
 }
 
 /* ------------- Seções Textuais ---------------- */
-section {
-    margin-top: 25px;
-}
+section { margin-top: 25px; }
 
 section h2 {
     font-size: 1.8rem; font-weight: 600;
@@ -122,8 +118,15 @@ section h2 {
     margin-bottom: 15px;
 }
 
-section > p {
+section > p, section li {
     font-size: 1rem;
     color: var(--cor-escura);
     margin-top: 10px;
+}
+
+/* -------------- Bibliografias ----------------- */
+ul { padding-left: 25px; }
+ul a, ul a:visited, ul a:link, ul a:hover, ul a:active { 
+    font-weight: 500;
+    color: var(--cor-escura);
 }
