@@ -75,10 +75,15 @@ section.informacao-inicial {
 section.informacao-inicial::before {
     content: '';
     display: block;
-    width: 100px;
+    width: 300px;
     height: 100%;
     position: absolute;
-    background-color: red;
+    left: -320px;
+
+    background: #00B565;
+    background: -webkit-linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
+    background: -moz-linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
+    background: linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
 }
 
 section.informacao-inicial h1 {
