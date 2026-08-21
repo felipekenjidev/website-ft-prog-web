@@ -110,3 +110,20 @@ section.informacao-inicial .topicos p {
     font-size: 1.1rem; font-weight: 600;
     color: var(--cor-secundaria);
 }
+
+/* ------------- Seções Textuais ---------------- */
+section {
+    margin-top: 25px;
+}
+
+section h2 {
+    font-size: 1.8rem; font-weight: 600;
+    color: var(--cor-escura);
+    margin-bottom: 15px;
+}
+
+section > p {
+    font-size: 1rem;
+    color: var(--cor-escura);
+    margin-top: 10px;
+}
