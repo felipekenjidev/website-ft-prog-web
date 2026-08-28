@@ -13,11 +13,11 @@
     --cor-escura: #003E65;
     --cor-branca: #FFFFFF;
 
-    --altura-header: 120px;
-    --largura-main: 70%;
+    --altura-header: 80px;
+    --largura-main: 60%;
 }
 
-html { font-size: 18px; font-family: 'Inter Tight'; }
+html { font-size: 16px; font-family: 'Inter Tight'; }
 
 /* ------------ Header e Navegação -------------- */
 body { padding-top: var(--altura-header); }
@@ -31,7 +31,7 @@ header {
     background-color: var(--cor-branca);
 }
 
-header img { width: 300px; }
+header img { width: 230px; }
 header p { font-size: 1rem; font-weight: 600; }
 header a, header a:visited, header a:link, header a:hover, header a:active { color: var(--cor-primaria); text-decoration: none; }
 
@@ -43,7 +43,7 @@ nav {
 /* ------------- Banner Principal --------------- */
 figure {
     height: 450px;
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner.png);
     background-size: cover; background-position: center center;
 
     display: flex;
@@ -75,10 +75,10 @@ section.informacao-inicial {
 section.informacao-inicial::before {
     content: '';
     display: block;
-    width: 300px;
+    width: 400px;
     height: 100%;
     position: absolute;
-    left: -320px;
+    left: calc(-400px - 20px);
 
     background: #00B565;
     background: -webkit-linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
@@ -175,11 +175,11 @@ footer {
     column-gap: 30px;
 
     background-color: var(--cor-terciaria);
-    padding: 30px 180px;
-    border-radius: 30px 30px 0 0;
+    padding: 30px 320px;
+    border-radius: 20px 20px 0 0;
 }
 
-footer img { width: 90px; height: 90px; }
+footer img { width: 75px; height: 75px; }
 footer p {
     font-size: 0.9rem;
     color: var(--cor-branca);
