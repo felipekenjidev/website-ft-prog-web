@@ -137,20 +137,10 @@ section > p, section li {
 }
 
 /* ------- Competências Desenvolvidas ----------- */
-section#competencias h2 { margin-bottom: 20px; }
-
-section#competencias > div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
-    gap: 20px 20px;
-}
-
-section#competencias > div > div {
-    display: flex; align-items: center;
-
-    padding: 30px 20px;
-    border: solid 3px var(--cor-secundaria); border-radius: 15px;
+section.secao-cards h2 { margin-bottom: 20px; }
+section.secao-cards > div { display: grid; }
+section.secao-cards > div > div {
+    border: solid 3px var(--cor-primaria); border-radius: 15px;
     outline: solid 4px var(--cor-clara);
 
     background-color: var(--cor-clara);
@@ -158,9 +148,19 @@ section#competencias > div > div {
     box-shadow: 2px 2px 7px 4px rgba(0,0,0,0.2);
 }
 
-section#competencias > div > div:nth-of-type(4n+2),
-    section#competencias > div > div:nth-of-type(4n+3) {
-        border-color: var(--cor-primaria);
+section.secao-cards > div > div:nth-of-type(4n+2),
+    section.secao-cards > div > div:nth-of-type(4n+3) {
+        border-color: var(--cor-secundaria);
+}
+
+section#competencias > div {
+    grid-template-columns: repeat(2, 1fr); grid-auto-rows: 1fr;
+    gap: 20px;
+}
+
+section#competencias > div > div {
+    display: flex; align-items: center;
+    padding: 30px 20px;
 }
 
 section#competencias p {
@@ -168,6 +168,36 @@ section#competencias p {
     font-size: 1.1rem; font-weight: 600;
     color: var(--cor-escura);
 }
+
+/* ---------------- Docentes -------------------- */
+section#docentes > div {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+section#docentes > div > div { 
+    display: flex; 
+    border-width: 4px; 
+    outline: none; 
+}
+
+section#docentes > div > div > img { 
+    width: 40%; max-width: 160px; 
+    border-radius: 10px 0 0 10px; 
+}
+
+section#docentes > div > div > div { 
+    display: flex; flex-flow: column wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+section#docentes > div > div > div div { display: flex; column-gap: 10px; }
+section#docentes > div > div > div img { width: 23px; height: 23px; }
+
+section#docentes h3 { color: var(--cor-escura); font-size: 1.3rem; }
+section#docentes h4 { color: var(--cor-escura); font-size: 1.1rem; margin-bottom: 20px; }
+section#docentes p { color: var(--cor-escura); font-size: 1rem; }
 
 /* -------------- Bibliografias ----------------- */
 ul { padding-left: 25px; }
