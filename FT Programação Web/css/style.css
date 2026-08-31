@@ -193,10 +193,10 @@ section#docentes > div > div > div {
 }
 
 section#docentes > div > div > div div { display: flex; column-gap: 10px; }
-section#docentes > div > div > div img { width: 23px; height: 23px; }
+section#docentes > div > div > div img { width: 25px; height: 25px; }
 
-section#docentes h3 { color: var(--cor-escura); font-size: 1.3rem; }
-section#docentes h4 { color: var(--cor-escura); font-size: 1.1rem; margin-bottom: 20px; }
+section#docentes h3 { color: var(--cor-escura); font-size: 1.4rem; }
+section#docentes h4 { color: var(--cor-escura); font-size: 1.2rem; margin-bottom: 20px; }
 section#docentes p { color: var(--cor-escura); font-size: 1rem; }
 
 /* -------------- Bibliografias ----------------- */
