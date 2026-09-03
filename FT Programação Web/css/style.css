@@ -200,7 +200,7 @@ section#docentes h4 { color: var(--cor-escura); font-size: 1.2rem; margin-bottom
 section#docentes p { color: var(--cor-escura); font-size: 1rem; }
 
 /* -------------- Bibliografias ----------------- */
-ul { padding-left: 25px; }
+ul, ol { padding-left: 25px; }
 ul a, ul a:visited, ul a:link, ul a:hover, ul a:active { 
     font-weight: 500;
     color: var(--cor-escura);
