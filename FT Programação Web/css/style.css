@@ -58,6 +58,7 @@ figcaption {
     padding: 20px 25px; border-radius: 10px;
     
     background: #00B565;
+    background: linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
 }
 
 /* ------------- Formas de Fundo ---------------- */
@@ -87,6 +88,7 @@ section#informacao-inicial::before {
     left: calc(-400px - 20px);
 
     background: #00B565;
+    background: linear-gradient(90deg,rgba(0, 181, 101, 1) 0%, rgba(0, 91, 147, 1) 100%);
 }
 
 section#informacao-inicial h1 {
