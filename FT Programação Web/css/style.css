@@ -12,6 +12,8 @@
     --cor-clara: #FDFFFC;
     --cor-escura: #003E65;
     --cor-branca: #FFFFFF;
+    --cor-desativada: #CBCBCB;
+    --cor-preta: #676767;
 
     --altura-header: 80px;
     --largura-main: 60%;
@@ -138,7 +140,6 @@ section > p, section li {
 
 /* ------- Competências Desenvolvidas ----------- */
 section.secao-cards h2 { margin-bottom: 20px; }
-section.secao-cards > div { display: grid; }
 section.secao-cards > div > div {
     border: solid 3px var(--cor-primaria); border-radius: 15px;
     outline: solid 4px var(--cor-clara);
@@ -148,13 +149,15 @@ section.secao-cards > div > div {
     box-shadow: 2px 2px 7px 4px rgba(0,0,0,0.2);
 }
 
-section.secao-cards > div > div:nth-of-type(4n+2),
-    section.secao-cards > div > div:nth-of-type(4n+3) {
+section#competencias > div > div:nth-of-type(4n+2),
+    section#competencias > div > div:nth-of-type(4n+3) {
         border-color: var(--cor-secundaria);
 }
 
 section#competencias > div {
-    grid-template-columns: repeat(2, 1fr); grid-auto-rows: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 1fr;
     gap: 20px;
 }
 
@@ -201,7 +204,8 @@ section#docentes p { color: var(--cor-escura); font-size: 1rem; }
 
 /* --------------- Cronograma ------------------- */
 section#cronograma > div {
-    grid-template-columns: 1fr; grid-auto-rows: 1fr;
+    display: flex;
+    flex-flow: column wrap;
     gap: 20px;
 }
 
@@ -212,16 +216,22 @@ section#cronograma > div > div {
     padding: 20px 15px; border-radius: 25px;
 }
 
+section#cronograma > div > div:nth-of-type(even) { border-color: var(--cor-secundaria); }
+
+section#cronograma > div > div.aula-desativada { 
+    background-color: var(--cor-desativada);
+    border-color: var(--cor-preta);
+    outline-color: var(--cor-desativada);
+}
+
 section#cronograma > div > div > div:first-child {
     display: flex; column-gap: 5px;
 }
 
-section#cronograma img { width: 35px; height: 35px; }
+section#cronograma img { width: 30px; height: 30px; }
 section#cronograma h3 { font-size: 1.5rem; color: var(--cor-escura); white-space: nowrap; }
 section#cronograma h4 { font-size: 1.3rem; color: var(--cor-escura); }
 section#cronograma h4:not(:first-child) { margin-top: 15px; }
-
-section#cronograma > div > div.aula-desativada { }
 
 /* -------------- Bibliografias ----------------- */
 ul, ol { padding-left: 25px; }
