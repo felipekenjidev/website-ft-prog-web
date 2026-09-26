@@ -121,6 +121,7 @@ section#informacao-inicial #topicos img { width: 28px; }
 section#informacao-inicial #topicos p {
     font-size: 1.1rem; font-weight: 600;
     color: var(--cor-secundaria);
+    margin-top: 3px;
 }
 
 /* ------------- Seções Textuais ---------------- */
@@ -228,7 +229,7 @@ section#cronograma > div > div.aula-desativada {
 }
 
 section#cronograma > div > div > div:first-child {
-    display: flex; column-gap: 5px;
+    display: flex; column-gap: 10px;
 }
 
 section#cronograma img { width: 30px; height: 30px; }
